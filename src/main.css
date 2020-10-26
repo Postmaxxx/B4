@@ -1,0 +1,277 @@
+@import "./add.css";
+
+body {
+  background-color: #bbb;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
+.nav {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.menu {
+  font-size: 1.5em;
+  margin: 0px 30px;
+}
+
+.menu_first {
+  margin-right: auto;
+}
+
+.menu_link {
+  transition: 0.9s;
+  color: white;
+}
+
+.menu_link:hover {
+  transition: 0.9s;
+  color: burlywood;
+}
+
+.selected {
+  color: burlywood;
+}
+
+.pageAbout {
+  height: 300px;
+  width: 800px;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 0%;
+}
+
+.pageBuyTicket {
+  height: 700px;
+  width: 700px;
+  margin: 30px auto;
+  text-align: center;
+  border: 1px solid green;
+  border-radius: 20%;
+}
+
+.place {
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.freePlace {
+  background-color: green;
+  color: white;
+}
+
+.soldPlace {
+  background-color: red;
+  color: transparent;
+}
+
+.selectedPlace {
+  background-color: yellow;
+  color: blue;
+}
+
+.legend1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.placesDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.testClass {
+  background-color: blueviolet;
+}
+
+.boughtTickets {
+  width: 800px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.ticketsDiv {
+  width: 500px;
+  border: 4px outset goldenrod;
+  display: block;
+  margin: 50px auto;
+}
+
+.ticket {
+  height: 200px;
+  width: 600px;
+  text-align: left;
+  margin: 30px auto;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.ticketBase {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.ticketTitle {
+  top: 75px;
+  left: 190px;
+  max-width: 250px;
+}
+
+.ticketRaw {
+  top: 108px;
+  left: 175px;
+  max-width: 30px;
+}
+
+.ticketColumn {
+  top: 89px;
+  left: 330px;
+  max-width: 30px;
+}
+
+.ticketPrice {
+  top: 93px;
+  left: 175px;
+  max-width: 40px;
+}
+
+.ticketDatePlace {
+  top: 100px;
+  left: 275px;
+  max-width: 250px;
+  font-size: 13px;
+}
+
+.ticketRawVertical {
+  top: 60px;
+  left: 22px;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+
+.ticketColumnVertical {
+  top: -20px;
+  left: 22px;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+}
+
+.ticketPriceVertical {
+  top: -105px;
+  left: 22px;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+}
+
+footer {
+  position: fixed; /* Фиксированное положение */
+  left: 0;
+  bottom: 0; /* Левый нижний угол */
+  padding: 10px; /* Поля вокруг текста */
+  background: rgba(0, 0, 0, 0); /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  width: 100%; /* Ширина слоя */
+  height: 30px;
+}
+
+.footerDiv {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.mainPage {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.mainMenu {
+  margin: 10px auto;
+  width: 420px;
+  height: 100px;
+  border: 4px outset goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.mainMenuLogo {
+  transition: 0.7s;
+
+  height: 0px;
+  width: 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  visibility: hidden;
+  margin-right: 20px;
+  margin-left: -5px;
+}
+
+.mainMenu:hover {
+  transition: 0.7s;
+  width: 500px;
+  height: 150px;
+  border: 4px outset transparent;
+  font-size: 50px;
+  color: black;
+}
+
+.mainMenu:hover .mainMenuLogo {
+  visibility: visible;
+  transition: 0.7s;
+  height: 60px;
+  width: 60px;
+}
+
+.timer {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
